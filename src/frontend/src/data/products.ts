@@ -46,13 +46,19 @@ const IMG_POPGIRL =
 const IMG_GOLDFACE =
   "/assets/uploads/img20250203185038-019d1fce-fa6a-717e-8520-6f12c50b8232-11.jpg";
 
+// Pastry flavour images
+const IMG_ECLAIR = "/assets/generated/eclair-pastry.dim_600x600.jpg";
+const IMG_FRUIT_TART = "/assets/generated/fruit-tart-pastry.dim_600x600.jpg";
+const IMG_BROWNIE =
+  "/assets/generated/chocolate-brownie-pastry.dim_600x600.jpg";
+
 export const categories: { name: Category; image: string; icon: string }[] = [
   { name: "Birthday Cakes", image: IMG_MAKEUP, icon: "🎂" },
   { name: "Anniversary Cakes", image: IMG_ANNIVERSARY25, icon: "💕" },
   { name: "Custom Cakes", image: IMG_GYM, icon: "✨" },
   {
     name: "Pastries",
-    image: "/assets/generated/pastries.dim_600x600.jpg",
+    image: IMG_ECLAIR,
     icon: "🥐",
   },
   {
@@ -207,7 +213,7 @@ export const products: Product[] = [
     id: 12,
     name: "Éclair Pastry",
     category: "Pastries",
-    image: "/assets/generated/pastries.dim_600x600.jpg",
+    image: IMG_ECLAIR,
     priceUnit: 49,
     unit: "each",
     description: "Light choux pastry filled with cream and chocolate glaze.",
@@ -217,7 +223,7 @@ export const products: Product[] = [
     id: 13,
     name: "Fruit Tart",
     category: "Pastries",
-    image: "/assets/generated/pastries.dim_600x600.jpg",
+    image: IMG_FRUIT_TART,
     priceUnit: 59,
     unit: "each",
     description:
@@ -228,7 +234,7 @@ export const products: Product[] = [
     id: 14,
     name: "Chocolate Brownie",
     category: "Pastries",
-    image: "/assets/generated/pastries.dim_600x600.jpg",
+    image: IMG_BROWNIE,
     priceUnit: 39,
     unit: "each",
     description: "Dense, fudgy homestyle chocolate brownie baked fresh daily.",
@@ -279,7 +285,7 @@ export const products: Product[] = [
     id: 19,
     name: "Mango Milkshake",
     category: "Cold Drinks",
-    image: "/assets/generated/cold-drinks.dim_600x600.jpg",
+    image: "/assets/generated/mango-milkshake.dim_400x400.jpg",
     priceUnit: 99,
     unit: "glass",
     description:
@@ -290,7 +296,7 @@ export const products: Product[] = [
     id: 20,
     name: "Cold Coffee",
     category: "Cold Drinks",
-    image: "/assets/generated/cold-drinks.dim_600x600.jpg",
+    image: "/assets/generated/cold-coffee.dim_400x400.jpg",
     priceUnit: 89,
     unit: "glass",
     description: "Strong cold brew coffee blended with ice cream and milk.",
@@ -300,7 +306,7 @@ export const products: Product[] = [
     id: 21,
     name: "Fresh Lime Soda",
     category: "Cold Drinks",
-    image: "/assets/generated/cold-drinks.dim_600x600.jpg",
+    image: "/assets/generated/fresh-lime-soda.dim_400x400.jpg",
     priceUnit: 59,
     unit: "glass",
     description: "Refreshing lime soda with mint, sweet or salted as you like.",
