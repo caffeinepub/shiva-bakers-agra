@@ -4,49 +4,69 @@ import { useState } from "react";
 
 const galleryImages = [
   {
-    src: "/assets/generated/hero-cake.dim_1200x600.jpg",
-    title: "Celebration Cake",
+    src: "/assets/uploads/img20250319204701_01-019d1fce-e9a6-7388-b782-897a4d3e7c7d-1.jpg",
+    title: "Makeup Birthday Cake",
   },
   {
-    src: "/assets/generated/birthday-cake.dim_600x600.jpg",
-    title: "Birthday Cake",
+    src: "/assets/uploads/img20250307193128_01-019d1fce-ea65-700c-8442-906913789553-2.jpg",
+    title: "Oreo Chocolate Cake",
   },
   {
-    src: "/assets/generated/anniversary-cake.dim_600x600.jpg",
-    title: "Anniversary Cake",
+    src: "/assets/uploads/img20250304183636_01-019d1fce-ea63-724a-b998-26715f4afa35-3.jpg",
+    title: "Gym Theme Cake",
   },
   {
-    src: "/assets/generated/custom-cake.dim_600x600.jpg",
-    title: "Designer Fondant Cake",
+    src: "/assets/uploads/img20250103181348_01-019d1fce-eaf1-76fc-9ea4-9be31f464fdb-4.jpg",
+    title: "Mickey Mouse Kids Cake",
   },
   {
-    src: "/assets/generated/strawberry-cake.dim_600x600.jpg",
-    title: "Strawberry Dream",
+    src: "/assets/uploads/screenshot_2025-02-25-18-15-53-26_6012fa4d4ddec268fc5c7112cbb265e7-019d1fce-eb61-7618-95e6-2d05c83454cf-5.jpg",
+    title: "25th Anniversary Cake",
   },
   {
-    src: "/assets/generated/pastries.dim_600x600.jpg",
-    title: "Assorted Pastries",
+    src: "/assets/uploads/img20250110221541_01-019d1fce-ec58-716c-af47-fade8059877c-6.jpg",
+    title: "Colorful Floral Cake",
   },
   {
-    src: "/assets/generated/biscuits.dim_600x600.jpg",
-    title: "Artisan Cookies",
-  },
-  { src: "/assets/generated/gifts.dim_600x600.jpg", title: "Gift Hampers" },
-  {
-    src: "/assets/generated/bakery-store.dim_800x600.jpg",
-    title: "Our Bakery",
+    src: "/assets/uploads/img20241210175826_01-019d1fce-edd0-73ae-9370-db235dae36f2-7.jpg",
+    title: "Jungle Animals Kids Cake",
   },
   {
-    src: "/assets/generated/baker-decorating.dim_800x600.jpg",
-    title: "Cake Artistry",
+    src: "/assets/uploads/img20250119180355_01-019d1fce-f383-724b-aeb5-778767cb22e9-8.jpg",
+    title: "Photo Birthday Cake",
   },
   {
-    src: "/assets/generated/party-items.dim_600x600.jpg",
-    title: "Party Items",
+    src: "/assets/uploads/img20250306170433_01-019d1fce-f400-7389-9cee-fa153bdcf7a4-9.jpg",
+    title: "Ducati Bike Theme Cake",
   },
   {
-    src: "/assets/generated/cold-drinks.dim_600x600.jpg",
-    title: "Cold Beverages",
+    src: "/assets/uploads/img20241121210157-019d1fce-f557-769c-bf59-e33018d366eb-10.jpg",
+    title: "Pop Art Girl Cake",
+  },
+  {
+    src: "/assets/uploads/img20250203185038-019d1fce-fa6a-717e-8520-6f12c50b8232-11.jpg",
+    title: "Golden Face Art Cake",
+  },
+  // Previous cakes
+  {
+    src: "/assets/uploads/img20250412194751-019d1f6a-1748-74f6-b497-ec482274470d-6.jpg",
+    title: "3-Tier Fairy Cake",
+  },
+  {
+    src: "/assets/uploads/img-20241012-wa0007-019d1f69-fa0a-71fa-960b-fa42474a84bf-1.jpg",
+    title: "Mickey Mouse Birthday Cake",
+  },
+  {
+    src: "/assets/uploads/img20250201183243_01-019d1f6a-070a-772e-bcaf-4ca4adf8f2d5-4.jpg",
+    title: "Rose Anniversary Cake",
+  },
+  {
+    src: "/assets/uploads/img20250211190121_01-019d1f6a-03b7-727c-9271-ca43881bae9d-3.jpg",
+    title: "Custom CA Cake",
+  },
+  {
+    src: "/assets/uploads/screenshot_20250407_135127-019d1f6a-0ac1-7748-a46b-6cfd09f30d87-5.jpg",
+    title: "Princess Birthday Cake",
   },
 ];
 
@@ -74,7 +94,7 @@ export function Gallery() {
         >
           {galleryImages.map((img, i) => (
             <motion.div
-              key={img.src}
+              key={`${img.title}-${i}`}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}

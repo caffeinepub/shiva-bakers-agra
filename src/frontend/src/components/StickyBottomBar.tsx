@@ -34,7 +34,7 @@ export function StickyBottomBar() {
           <span className="text-xs font-semibold">Contact</span>
         </a>
         <a
-          href="https://instagram.com/shibabakersagra"
+          href="https://www.instagram.com/_shiva.bakers_"
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 flex flex-col items-center justify-center py-3 gap-0.5 text-brown-dark hover:bg-gold-dark transition-colors"

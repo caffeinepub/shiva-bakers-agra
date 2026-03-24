@@ -57,7 +57,7 @@ export function Footer() {
           <div className="space-y-3 text-sm text-white/70">
             <div className="flex items-start gap-2">
               <MapPin className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" />
-              <span>Dayanand Nagar, Naglapadi, Agra, Uttar Pradesh 282002</span>
+              <span>Dayanand Nagar, Naglapadi, Agra, Uttar Pradesh 282005</span>
             </div>
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-gold" />
@@ -67,17 +67,17 @@ export function Footer() {
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4 text-gold" />
-              <span>Open daily: 9 AM – 10 PM</span>
+              <span>Open daily: 11 AM – 11 PM</span>
             </div>
             <div className="flex items-center gap-2">
               <Instagram className="w-4 h-4 text-gold" />
               <a
-                href="https://instagram.com/shibabakersagra"
+                href="https://www.instagram.com/_shiva.bakers_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gold"
               >
-                @shibabakersagra
+                @_shiva.bakers_
               </a>
             </div>
           </div>

@@ -35,8 +35,8 @@ const contactItems = [
   {
     icon: <Instagram className="w-5 h-5" />,
     label: "Instagram",
-    value: "@shibabakersagra",
-    href: "https://instagram.com/shibabakersagra",
+    value: "@_shiva.bakers_",
+    href: "https://www.instagram.com/_shiva.bakers_",
   },
   {
     icon: <Mail className="w-5 h-5" />,
