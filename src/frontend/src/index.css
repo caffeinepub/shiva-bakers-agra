@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Bakery palette - OKLCH L C H */
+    --brown-primary: 0.37 0.065 41;
+    --brown-dark: 0.22 0.048 41;
+    --brown-medium: 0.5 0.072 41;
+    --cream: 0.94 0.018 82;
+    --cream-dark: 0.88 0.025 75;
+    --pink-pastel: 0.86 0.045 10;
+    --pink-light: 0.92 0.025 10;
+    --gold: 0.76 0.095 80;
+    --gold-dark: 0.65 0.085 78;
+
+    /* Semantic tokens mapped to bakery palette */
+    --background: 0.94 0.018 82;
+    --foreground: 0.22 0.048 41;
+    --card: 1 0 0;
+    --card-foreground: 0.22 0.048 41;
+    --popover: 1 0 0;
+    --popover-foreground: 0.22 0.048 41;
+    --primary: 0.37 0.065 41;
+    --primary-foreground: 0.97 0 0;
+    --secondary: 0.86 0.045 10;
+    --secondary-foreground: 0.22 0.048 41;
+    --muted: 0.92 0.018 75;
+    --muted-foreground: 0.52 0.04 41;
+    --accent: 0.76 0.095 80;
+    --accent-foreground: 0.22 0.048 41;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.8 0.025 65;
+    --input: 0.88 0.02 75;
+    --ring: 0.76 0.095 80;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.37 0.065 41;
+    --sidebar-foreground: 0.97 0 0;
+    --sidebar-primary: 0.76 0.095 80;
+    --sidebar-primary-foreground: 0.22 0.048 41;
+    --sidebar-accent: 0.5 0.072 41;
+    --sidebar-accent-foreground: 0.97 0 0;
+    --sidebar-border: 0.5 0.072 41;
+    --sidebar-ring: 0.76 0.095 80;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-serif {
+    font-family: "Playfair Display", serif;
+  }
+}
+
+@layer utilities {
+  .text-brown-primary {
+    color: oklch(var(--brown-primary));
+  }
+  .text-brown-dark {
+    color: oklch(var(--brown-dark));
+  }
+  .text-gold {
+    color: oklch(var(--gold));
+  }
+  .bg-brown-primary {
+    background-color: oklch(var(--brown-primary));
+  }
+  .bg-brown-dark {
+    background-color: oklch(var(--brown-dark));
+  }
+  .bg-brown-medium {
+    background-color: oklch(var(--brown-medium));
+  }
+  .bg-cream {
+    background-color: oklch(var(--cream));
+  }
+  .bg-cream-dark {
+    background-color: oklch(var(--cream-dark));
+  }
+  .bg-pink-pastel {
+    background-color: oklch(var(--pink-pastel));
+  }
+  .bg-pink-light {
+    background-color: oklch(var(--pink-light));
+  }
+  .bg-gold {
+    background-color: oklch(var(--gold));
+  }
+  .bg-gold-dark {
+    background-color: oklch(var(--gold-dark));
+  }
+  .border-gold {
+    border-color: oklch(var(--gold));
+  }
+  .border-brown-primary {
+    border-color: oklch(var(--brown-primary));
+  }
+  .hover\:bg-gold-dark:hover {
+    background-color: oklch(var(--gold-dark));
+  }
+  .hover\:bg-brown-dark:hover {
+    background-color: oklch(var(--brown-dark));
+  }
+
+  .card-hover {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+
+  .pb-safe {
+    padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+  }
+}
